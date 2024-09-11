@@ -2,8 +2,8 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/web2/(.*)",
-      "destination": "/apps/web2/$1"
+      "source": "/docs/(.*)",
+      "destination": "/apps/docs/$1"
     }
   ]
 }
