@@ -1,0 +1,22 @@
+{
+  "name": "@repo/tailwind",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./tailwind.css": "./styles/src/tailwind.css",
+    "./tailwind.config.js": "./tailwind.config.js",
+    "./postcss.config.js": "./postcss.config.js"
+  },
+  "scripts": {},
+  "peerDependencies": {
+    "next": "*",
+    "react": "^18.0.0 || ^20.0.0-0",
+    "react-dom": "^18.0.0 || ^20.0.0-0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.4.10"
+  }
+}
