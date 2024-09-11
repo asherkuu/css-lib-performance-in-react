@@ -30,7 +30,7 @@ function UiLayout({
       </div>
 
       {/* MultiZone Tab Button */}
-      {/* <div className="flex justify-center">
+      <div className="flex justify-center">
         <div className="relative mb-4 inline-flex flex-wrap justify-center rounded-xl bg-white p-2 shadow-lg shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] max-[480px]:max-w-[180px] min-[480px]:mb-8">
           <div>
             <a
@@ -39,7 +39,7 @@ function UiLayout({
                 `ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-none ${pathname === "/" ? "bg-gray-800 text-gray-200" : "text-gray-700"}`
               )}
             >
-              <span>First CSS Group</span>
+              <span>Css libraries</span>
             </a>
           </div>
           <div>
@@ -49,11 +49,11 @@ function UiLayout({
                 `ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-none ${pathname === "/second-css-groups" ? "bg-gray-800 text-gray-200" : "text-gray-700"}`
               )}
             >
-              <span>Second CSS Group</span>
+              <span>Component libraries</span>
             </a>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <main>{children}</main>
     </div>
