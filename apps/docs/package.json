@@ -5,12 +5,11 @@
   "scripts": {
     "dev": "next dev --turbo --port 3001",
     "build": "next build",
-    "start": "next start --port 3001",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
-    "@vercel/next": "^4.3.9",
     "next": "14.2.6",
     "react": "18.3.1",
     "react-dom": "18.3.1"
