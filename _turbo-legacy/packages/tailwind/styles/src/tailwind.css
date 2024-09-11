@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Buttons */
+.btn,
+.btn-sm {
+  @apply text-sm font-medium inline-flex items-center justify-center border border-transparent rounded-md tracking-normal transition;
+}
+
+.btn {
+  @apply px-4 py-2;
+}
+
+.btn-sm {
+  @apply px-2 py-1;
+}
