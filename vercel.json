@@ -1,5 +1,21 @@
 {
   "version": 2,
+  "projects": [
+    {
+      "src": "apps/web",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": ".next"
+      }
+    },
+    {
+      "src": "apps/docs",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": ".next"
+      }
+    }
+  ],
   "rewrites": [
     {
       "source": "/docs/(.*)",
