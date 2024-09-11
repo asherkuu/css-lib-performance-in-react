@@ -1,10 +1,10 @@
 "use client";
 
 import { ReactNode } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import useCardStore from "@/store/useCardStore";
-import Link from "next/link";
 
 function UiLayout({ children }: { children: ReactNode }): JSX.Element {
   const pathname = usePathname();
@@ -21,8 +21,8 @@ function UiLayout({ children }: { children: ReactNode }): JSX.Element {
         <p className="mb-8 text-lg text-gray-700">
           Renders a list of {NUM_CARDS} cards using various styling strategies,
           <br />
-          and uses React's <strong>&lt;Profiler&gt;</strong> component to
-          measure render time.
+          and uses React&#39;s <strong>&lt;Profiler&gt;</strong> component to
+          measure render time
         </p>
       </div>
 

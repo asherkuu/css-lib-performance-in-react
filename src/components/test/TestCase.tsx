@@ -12,7 +12,7 @@ interface TestCaseProps {
 function TestCase({
   id,
   name,
-  code = "```const b = null; ```",
+  code = "```const fooo = 'bar'; ```",
   Component,
 }: TestCaseProps) {
   const { max, setMax, setPerfHistory } = useCardStore();
@@ -51,6 +51,7 @@ function TestCase({
   return (
     // @ts-ignore
     <Profiler id={name} onRender={onRender}>
+      {/* Hero */}
       <div
         className="flex flex-col relative"
         aria-label="profiler"
@@ -73,9 +74,8 @@ function TestCase({
             <strong>{perf ? `${Math.round(perf * 100) / 100}ms` : ""}</strong>
           </span>
         </div>
-        {/* <div style={{ visibility: "hidden" }}> */}
+
         <Component />
-        {/* </div> */}
       </div>
     </Profiler>
   );

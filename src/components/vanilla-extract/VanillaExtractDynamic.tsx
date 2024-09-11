@@ -1,6 +1,6 @@
 import React from "react";
 import { assignInlineVars } from "@vanilla-extract/dynamic";
-import * as styles from "./styles.css";
+import * as styles from "@/components/vanilla-extract/styles.css";
 import useCardStore from "@/store/useCardStore";
 
 function VanillaExtractDynamic() {

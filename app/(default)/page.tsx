@@ -14,7 +14,7 @@ function Home() {
       return;
     }
 
-    let nextRunCount = runCount + 1;
+    const nextRunCount = runCount + 1;
     setRunCount(-1);
     setTimeout(() => {
       setRunCount(nextRunCount);

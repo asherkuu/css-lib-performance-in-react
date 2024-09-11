@@ -1,8 +1,8 @@
-import MuiBoxWithProps from "./MuiBoxWithProps";
-import MuiBoxWithSX from "./MuiBoxWithSX";
-import MuiStyled from "./MuiStyled";
-import MuiStyledWithTheme from "./MuiStyledWithTheme";
-import MuiBoxWithStyledTheme from "./MuiBoxWithStyledTheme";
+import MuiBoxWithProps from "@/components/mui/MuiBoxWithProps";
+import MuiBoxWithSX from "@/components/mui/MuiBoxWithSX";
+import MuiStyled from "@/components/mui/MuiStyled";
+import MuiStyledWithTheme from "@/components/mui/MuiStyledWithTheme";
+import MuiBoxWithStyledTheme from "@/components/mui/MuiBoxWithStyledTheme";
 
 export {
   MuiBoxWithProps,

@@ -1,5 +1,5 @@
-import EmotionCss from "./EmotionCss";
-import EmotionStyled from "./EmotionStyled";
-import EmotionStyledFunction from "./EmotionStyledFunction";
+import EmotionCss from "@/components/emotion/EmotionCss";
+import EmotionStyled from "@/components/emotion/EmotionStyled";
+import EmotionStyledFunction from "@/components/emotion/EmotionStyledFunction";
 
 export { EmotionCss, EmotionStyled, EmotionStyledFunction };

@@ -1,8 +1,8 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { ConfigProvider } from "antd";
 
-import { pureCssMd, pureCssModuleMd } from "@/code-markdowns/codes";
-import { PureCss, PureCssModule, Sass } from "@/components/pure";
+import { vanillaCssMd, vanillaCssModuleMd } from "@/code-markdowns/codes";
+import { VanillaCss, VanillaModule, Sass } from "@/components/vanilla";
 import { TailwindClasses } from "@/components/tailwind";
 import {
   EmotionCss,
@@ -49,16 +49,16 @@ function TestSuite() {
           <TestCase
             id="pure-css"
             name="CSS"
-            Component={PureCss}
-            code={pureCssMd}
+            Component={VanillaCss}
+            code={vanillaCssMd}
           />
 
           {/* pure css module */}
           <TestCase
             id="pure-css-module"
             name="CSS module"
-            Component={PureCssModule}
-            code={pureCssModuleMd}
+            Component={VanillaModule}
+            code={vanillaCssModuleMd}
           />
 
           {/* pure css module */}

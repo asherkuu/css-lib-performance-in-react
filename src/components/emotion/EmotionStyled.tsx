@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import Styled from "./emotion.styled";
+import Styled from "@/components/emotion/emotion.styled";
 import useCardStore from "@/store/useCardStore";
 
 const EmotionStyledContainer = ({

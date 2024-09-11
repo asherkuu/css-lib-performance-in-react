@@ -1,6 +1,6 @@
+import React from "react";
 import { Box } from "@chakra-ui/react";
 import useCardStore from "@/store/useCardStore";
-import React from "react";
 
 const ChakraBoxContainer = ({ children }: { children: React.ReactNode }) => (
   <Box

@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import Styled from "./emotion-function.styled";
+import Styled from "@/components/emotion/emotion-function.styled";
 import useCardStore from "@/store/useCardStore";
 
 const EmotionStyledFunctionContainer = ({

@@ -1,5 +1,5 @@
-import ChakraBoxWithProps from "./ChakraBoxWithProps";
-import ChakraBoxWithSX from "./ChakraBoxWithSX";
-import ChakraFactory from "./ChakraFactory";
+import ChakraBoxWithProps from "@/components/chakra/ChakraBoxWithProps";
+import ChakraBoxWithSX from "@/components/chakra/ChakraBoxWithSX";
+import ChakraFactory from "@/components/chakra/ChakraFactory";
 
 export { ChakraBoxWithProps, ChakraBoxWithSX, ChakraFactory };

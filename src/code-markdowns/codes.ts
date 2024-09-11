@@ -1,4 +1,4 @@
-export const pureCssMd = `
+export const vanillaCssMd = `
 ~~~js
 // style.css
 .item {
@@ -14,7 +14,7 @@ const Item = () => <div className="item" />;
 ~~~
 `;
 
-export const pureCssModuleMd = `
+export const vanillaCssModuleMd = `
 ~~~js
 // style.module.css
 .item {

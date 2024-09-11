@@ -16,7 +16,7 @@ type CardConuter = {
     "#88D66C",
     "#3572EF",
     "#7C00FE",
-    "#F0A8D0",
+    "#F0A8D0"
   ];
   setRunCount: (runCount: number) => void;
   setMax: (max: number) => void;
@@ -47,9 +47,9 @@ const useCardStore = create<CardConuter>()((set, get) => ({
     "#7C00FE",
     "#F0A8D0",
   ],
-  setRunCount: (runCount: number) => set((_state) => ({ runCount })),
-  setMax: (max: number) => set((_state) => ({ max })),
-  setNumCards: (numCards: number) => set((_state) => ({ numCards })),
+  setRunCount: (runCount: number) => set(() => ({ runCount })),
+  setMax: (max: number) => set(() => ({ max })),
+  setNumCards: (numCards: number) => set(() => ({ numCards })),
   setPerfHistory: ({
     id,
     name,
@@ -65,9 +65,9 @@ const useCardStore = create<CardConuter>()((set, get) => ({
     newPerfHistory.push({ id, name, baseDuration });
 
     console.log(newPerfHistory);
-    set((_state) => ({ perfHistory: newPerfHistory }));
+    set(() => ({ perfHistory: newPerfHistory }));
   },
-  resetPerfHistory: () => set((_state) => ({ perfHistory: [] })),
+  resetPerfHistory: () => set(() => ({ perfHistory: [] })),
 }));
 
 export default useCardStore;

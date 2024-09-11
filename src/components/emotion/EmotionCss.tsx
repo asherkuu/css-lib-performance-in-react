@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import styles from "./emotion.style";
+import styles from "@/components/emotion/emotion.style";
 import useCardStore from "@/store/useCardStore";
 
 const EmotionCssContainer = ({ children }: { children: React.ReactNode }) => (

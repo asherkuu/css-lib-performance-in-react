@@ -1,6 +1,6 @@
+import React from "react";
 import Box from "@mui/material/Box";
 import useCardStore from "@/store/useCardStore";
-import React from "react";
 
 const MuiBoxContainer = ({ children }: { children: React.ReactNode }) => (
   <Box

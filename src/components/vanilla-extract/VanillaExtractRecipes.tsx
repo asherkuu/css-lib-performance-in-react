@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "./recipe.css";
+import * as styles from "@/components/vanilla-extract/recipe.css";
 import useCardStore from "@/store/useCardStore";
 
 function VanillaExtractRecipes() {
