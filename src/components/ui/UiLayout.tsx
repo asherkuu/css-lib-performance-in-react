@@ -17,13 +17,17 @@ function UiLayout({ children }: { children: ReactNode }): JSX.Element {
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[64rem] mx-auto">
       {/* Hero */}
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-12">
         <h1 className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl">
           CSS Performance
         </h1>
+        <h1 className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl">
+          in Next.js
+        </h1>
 
-        <p className="mb-8 text-lg text-gray-700">
-          Renders a list of {NUM_CARDS} cards using various styling strategies,
+        <p className="mb-8 text-lg text-gray-700 text-center">
+          Renders a list of <strong>{NUM_CARDS}</strong> cards using various
+          styling strategies,
           <br />
           and uses React&#39;s <strong>&lt;Profiler&gt;</strong> component to
           measure render time

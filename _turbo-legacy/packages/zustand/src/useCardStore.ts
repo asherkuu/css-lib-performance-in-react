@@ -64,7 +64,6 @@ const useCardStore = create<CardConuter>()((set, get) => ({
 
     newPerfHistory.push({ id, name, baseDuration });
 
-    console.log(newPerfHistory);
     set((_state) => ({ perfHistory: newPerfHistory }));
   },
   resetPerfHistory: () => set((_state) => ({ perfHistory: [] })),

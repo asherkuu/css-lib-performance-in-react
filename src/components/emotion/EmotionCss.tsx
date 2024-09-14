@@ -1,4 +1,5 @@
 "use client";
+/** @jsxImportSource @emotion/react */
 
 import React from "react";
 import styles from "@/components/emotion/emotion.style";
