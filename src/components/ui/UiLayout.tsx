@@ -8,7 +8,11 @@ import useCardStore from "@/store/useCardStore";
 
 function UiLayout({ children }: { children: ReactNode }): JSX.Element {
   const pathname = usePathname();
-  const { numCards: NUM_CARDS } = useCardStore();
+  const { numCards: NUM_CARDS, resetRunCount } = useCardStore();
+
+  const handleTabClick = () => {
+    resetRunCount();
+  };
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[64rem] mx-auto">
@@ -32,6 +36,7 @@ function UiLayout({ children }: { children: ReactNode }): JSX.Element {
           <div>
             <Link
               href="/"
+              onClick={handleTabClick}
               className={clsx(
                 `ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-none ${
                   pathname === "/"
@@ -46,6 +51,7 @@ function UiLayout({ children }: { children: ReactNode }): JSX.Element {
           <div>
             <Link
               href="/component-libraries"
+              onClick={handleTabClick}
               className={clsx(
                 `ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-none ${
                   pathname === "/component-libraries"

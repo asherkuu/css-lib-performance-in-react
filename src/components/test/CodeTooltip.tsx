@@ -7,7 +7,7 @@ function CodeTooltip({ open, code }: { open: boolean; code: string }) {
       id="tooltip-light"
       role="tooltip"
       className={clsx(
-        `absolute z-10 inline-block text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm tooltip left-0 bottom-[42px] max-w-[400px] ${
+        `absolute z-10 inline-block text-sm font-medium text-gray-900 bg-[#F8F8FF] border border-gray-200 rounded-lg shadow-sm tooltip left-0 bottom-[42px] max-w-[500px] p-2 ${
           open ? "opacity-100" : "opacity-0 invisible"
         }`
       )}

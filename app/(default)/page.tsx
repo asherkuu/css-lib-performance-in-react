@@ -1,8 +1,11 @@
 "use client";
 
+import React from "react";
+import Statistics from "@/components/statistic/Statistics";
 import TestSuite from "@/components/test/TestSuite";
 import useCardStore from "@/store/useCardStore";
-import React from "react";
+
+const type = "css";
 
 function Home() {
   const { runCount, setRunCount } = useCardStore();
@@ -24,7 +27,7 @@ function Home() {
 
   return (
     <div>
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-12 relative gap-2">
         {runCount === -1 ? (
           <div className="btn-sm bg-violet-400 text-gray-200 shadow w-[116px]">
             loading...
@@ -32,7 +35,7 @@ function Home() {
         ) : (
           <button
             type="button"
-            className="btn-sm bg-violet-600 text-gray-200 shadow hover:bg-violet-900  w-[116px]"
+            className="py-2 px-4 text-sm font-medium text-gray-50 focus:outline-none bg-purple-600 rounded-lg border border-gray-200 hover:bg-purple-500 focus:z-10 focus:ring-4 focus:ring-gray-100"
             onClick={onClickRun}
             disabled={runCount === -1 || loading}
           >
@@ -40,7 +43,7 @@ function Home() {
           </button>
         )}
 
-        {/* <Statistics /> */}
+        <Statistics type={type} />
       </div>
 
       {runCount > 0 && <TestSuite key={runCount} />}

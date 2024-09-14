@@ -3,6 +3,7 @@ import useCardStore from "@/store/useCardStore";
 import CodeTooltip from "@/components/test/CodeTooltip";
 
 interface TestCaseProps {
+  type: "css" | "component";
   id: string;
   name: string;
   code?: string;
@@ -10,12 +11,13 @@ interface TestCaseProps {
 }
 
 function TestCase({
+  type,
   id,
   name,
-  code = "```const fooo = 'bar'; ```",
+  code = "```const foo = 'bar'; ```",
   Component,
 }: TestCaseProps) {
-  const { max, setMax, setPerfHistory } = useCardStore();
+  const { runCount, max, setMax, setStatistics } = useCardStore();
 
   const [perf, setPerf] = useState<number | null>(null);
   const [openTooltip, setOpenTooltip] = useState(false);
@@ -35,15 +37,13 @@ function TestCase({
           setMax(actualDuration);
         }
         setPerf(actualDuration);
-        setPerfHistory({ id, name, baseDuration: actualDuration });
+        setStatistics(type, {
+          id,
+          name,
+          runCount,
+          baseDuration: actualDuration,
+        });
       }
-      // if (phase === "mount") {
-      //   if (baseDuration > max) {
-      //     setMax(baseDuration);
-      //   }
-      //   setPerf(baseDuration);
-      //   setPerfHistory({ id, name, baseDuration });
-      // }
     },
     []
   );
